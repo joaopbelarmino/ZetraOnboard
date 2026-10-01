@@ -1,0 +1,11 @@
+name: ZetraOnboarding
+version: 1.0
+main: me.zetra.onboarding.ZetraOnboarding
+api-version: '1.21'
+depend: [PlaceholderAPI]
+commands:
+  zetraonboarding:
+    description: Comando principal do Onboarding
+    permission: zetraonboarding.admin
+  skip:
+    description: Pular o tutorial de onboarding

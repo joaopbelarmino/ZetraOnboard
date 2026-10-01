@@ -1,0 +1,40 @@
+settings:
+  announcement-delay: 300 # segundos
+  skip-rewards: true # Se o jogador recebe recompensas ao usar /skip
+
+  # Sistema Anti-Fake (Limite de IP)
+  anti-fake:
+    enabled: true
+    max-per-ip: 2 # Quantas contas por IP podem ficar online ao mesmo tempo
+    kick-message: "&dOps! &7Você já atingiu o limite de &e%limit% &7contas por IP!\n&d(OPs e jogadores na Whitelist não contam)"
+    whitelist:
+      - "SeuNickAqui"
+      - "OutroNick"
+
+messages:
+  mission-complete: "&5&l[MISSÕES] &b&l✔ &dMissão concluída! &fVocê recebeu suas recompensas."
+  onboarding-finished: "&5&l[MISSÕES] &d&l✨ &dParabéns! &fVocê concluiu todo o tutorial de boas-vindas!"
+  skip-success: "&5&l[MISSÕES] &e&l⚠ &fVocê pulou o tutorial de onboarding."
+  already-finished: "&5&l[MISSÕES] &b&lℹ &fVocê já concluiu este tutorial."
+
+missions:
+  m1:
+    bossbar: "&5&lMissão 1: &fClique no NPC de &a&lJOGAR &7[/skip para pular]"
+    chat-warn: "&5&l[MISSÕES] &b&l💡 &fVocê ainda não falou com o NPC! Use &e/skip &fpara pular."
+    reward-commands:
+      - "give %player% iron_ingot 32"
+  m2:
+    bossbar: "&5&lMissão 2: &fFaça um &dPeitoral de Ferro &7[/skip para pular]"
+    chat-warn: "&5&l[MISSÕES] &b&l💡 &fVocê precisa equipar um peitoral de ferro para continuar!"
+    reward-commands:
+      - "economy give %player% 5"
+  m3:
+    bossbar: "&5&lMissão 3: &fUse &e/g &fpara enviar uma mensagem no chat global &7[/skip para pular]"
+    chat-warn: "&5&l[MISSÕES] &b&l💡 &fUse &e/g <mensagem> &fpara falar no chat global!"
+    reward-commands:
+      - "economy give %player% 5"
+  m4:
+    bossbar: "&5&lMissão 4: &fEntre ou crie um Clã &7[/skip para pular]"
+    chat-warn: "&5&l[MISSÕES] &b&l💡 &fVocê precisa entrar ou criar um clã! Pergunte no &e/g &fse tem clãs recrutando."
+    reward-commands:
+      - "economy give %player% 5"

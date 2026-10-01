@@ -1,0 +1,40 @@
+settings:
+  announcement-delay: 60 # segundos
+  skip-rewards: true # Se o jogador recebe recompensas ao usar /skip
+
+  # Sistema Anti-Fake (Limite de IP)
+  anti-fake:
+    enabled: true
+    max-per-ip: 1 # Quantas contas por IP podem ficar online ao mesmo tempo
+    kick-message: "&c&lZetraMC &8» &cVocê já atingiu o limite de &e%limit% &ccontas por IP!\n&7(OPs e jogadores na Whitelist não contam)"
+    whitelist:
+      - "SeuNickAqui"
+      - "OutroNick"
+
+messages:
+  mission-complete: "&a&l✔ &aMissão concluída! Você recebeu suas recompensas."
+  onboarding-finished: "&6&l✨ &6Parabéns! Você concluiu todo o tutorial de boas-vindas!"
+  skip-success: "&e&l⚠ &eVocê pulou o tutorial de onboarding."
+  already-finished: "&c&l✖ &cVocê já concluiu o tutorial."
+
+missions:
+  m1:
+    bossbar: "&e&lMissão 1: &fVá até o NPC de Jogar"
+    chat-warn: "&c&l⚠ &cVocê ainda não falou com o NPC! Use &e/skip &cpara pular."
+    reward-commands:
+      - "give %player% bread 5"
+  m2:
+    bossbar: "&e&lMissão 2: &fEquipe um Peitoral de Ferro"
+    chat-warn: "&c&l⚠ &cVocê precisa equipar um peitoral de ferro para continuar!"
+    reward-commands:
+      - "give %player% iron_ingot 3"
+  m3:
+    bossbar: "&e&lMissão 3: &fEnvie uma mensagem no chat global (&e/g&f)"
+    chat-warn: "&c&l⚠ &cUse &e/g <mensagem> &cpara falar no chat global!"
+    reward-commands:
+      - "experience add %player% 50"
+  m4:
+    bossbar: "&e&lMissão 4: &fEntre em um Clã"
+    chat-warn: "&c&l⚠ &cVocê ainda não entrou em um clã! Use &e/clan create &cou peça convite."
+    reward-commands:
+      - "give %player% diamond 1"
